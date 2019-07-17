@@ -3,7 +3,8 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import PriceList from './components/PriceList';
+// import PriceList from './components/PriceList';
+import PriceListFunction from './components/PriceListFunction';
 
 const items = [
   {
@@ -15,6 +16,7 @@ const items = [
       "id": "1",
       "name": "电脑",
       "type": "outcome",
+      "iconName": "IosCart",
     }
   },
   {
@@ -26,6 +28,7 @@ const items = [
       "id": "2",
       "name": "外包服务",
       "type": "income",
+      "iconName": "$",
     }
   },
 ]
@@ -47,7 +50,8 @@ function App() {
           {/*Learn React*/}
         {/*</a>*/}
       {/*</header>*/}
-      <PriceList
+
+      <PriceListFunction
           items={items}
           onModifyItem={(item) => {
             alert(item.id)
