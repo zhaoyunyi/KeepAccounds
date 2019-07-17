@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 // import PriceList from './components/PriceList';
 import PriceListFunction from './components/PriceListFunction';
+import ViewTab, { LIST_VIEW , LIST_CHART} from "./components/ViewTab";
+
 
 const items = [
   {
@@ -51,6 +53,12 @@ function App() {
         {/*</a>*/}
       {/*</header>*/}
 
+      <ViewTab
+          activeTab={LIST_VIEW}
+          onTabChange={(item) => {
+            alert(item)
+          }}
+      />
       <PriceListFunction
           items={items}
           onModifyItem={(item) => {

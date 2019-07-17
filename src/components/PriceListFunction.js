@@ -76,4 +76,4 @@ PriceListFunction.propTypes = {
     onDeleteItem: PropTypes.func.isRequired,
 };
 
-export default PriceListFunction;
+export default PriceListFunction
